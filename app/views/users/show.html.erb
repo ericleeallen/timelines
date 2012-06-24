@@ -1,0 +1,23 @@
+<% provide(:title, @user.name) %>
+<div class="row">
+	<aside class="span4">
+		<section>
+			<h1><%= @user.name %></h1>
+		</section>
+	</aside>
+</div>
+
+<table class="table table-bordered">
+	<thead>
+		<tr>
+			<th>Name</th>
+			<th>Email</th>
+			<th>Birth Date</th>
+		</tr>
+	</thead>
+	<tbody>
+		<tr>
+			<td><%= @user.name %></td><td><%= @user.email %></td>	<td><%= @user.birth_date %></td>
+		</tr>
+	</tbody>
+</table>
